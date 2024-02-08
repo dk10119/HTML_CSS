@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(255,245,241);
+    font-family: "Open Sans Condensed", sans-serif;
+    color: #333;
+    line-height: 1.5;
+}
+
+h1 {
+    margin-bottom: 35px;
+}
+
+section {
+    padding: 32px;
+}
+
+img {
+    height: 200px;
+    width: auto;
+}
+
+.pic1 {
+    float: left;
+}
+
+/* Header area */
+
+header {
+    background: #333;
+    text-align: right;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+header li {
+    display: inline-block;
+    color: white;
+}
+
+ul li a {
+    margin: 20px;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+li:hover {
+    background-color: rgb(15,15,15);
+}
+
+
+/* Table */
+
+table {
+    border-collapse: collapse;
+}
+
+thead {
+    font-weight: bold;
+    background: orange;
+    color: white;
+}
+
+td, th {
+    width: 200px;
+    padding: 15px;
+    border: 1px solid white;
+    text-align: left;
+}
+
+th {
+    border-bottom: 3px solid white;
+}
+
+.odd {
+    background-color:bisque;
+}
+
+/* Boxes */
+
+#boxes {
+    background: url("https://source.unsplash.com/xC7Ho08RYF4") no-repeat center center/cover;
+    height: 100vh;
+}
+
+.box {
+    border: 1px solid black;
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+    margin: 35px;
+}
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5 {
+    background: gray;
+}
+
+.box1 {
+    background: purple;
+    border: 5px dotted white;
+}
+
+.box2 {
+    background: skyblue;
+    border: 7px double white;
+}
+
+.box3 {
+    background: darkgreen;
+    border-width: 10px;
+    border-color: green yellow blue red;
+}
+
+.box4 {
+    background: paleturquoise;
+    border-radius: 13px;
+    border: 7px dashed white;
+}
+
+.box5 {
+    background: indianred;
+    border-radius: 50%;
+    border: 3px dotted white;
+}
+
+/*
+.box {
+    display: inline-block;
+    margin: 32px;
+    height: 200px;
+    width: 200px;
+    padding: 10px;
+}
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5 {
+    background: rgb(155,155,155);
+    margin-bottom: 10px;
+}
+
+.box1 {
+    border: 3px dotted white;
+}
+
+.box2 {
+    border: 7px double white;
+}
+
+.box3 {
+    border-style: groove;
+    border-width: 10px;
+    border-color: greenyellow yellow blue red;
+}
+
+.box4 {
+    border: 5px dashed white;
+    border-radius: 50%;
+}
+
+.box5 {
+    border: 5px dotted white;
+    border-radius: 25px;
+}
+*/

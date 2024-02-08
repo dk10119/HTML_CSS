@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: bisque;
+    color: white;
+    height: 100vh;
+}
+
+.pm {
+    border: 1px solid white;
+}
+
+header {
+    display: flex;
+    height: 10%;
+}
+
+.site-title {
+    background: yellow;
+    color: black;
+    width: 50%;
+}
+
+.site-nav {
+    width: 50%;
+}
+
+ul  {
+    display: flex;
+    list-style-type: none;
+    height: 100%;
+}
+
+.nav {
+    background: pink;
+    color: black;
+    flex: 1;
+}
+
+main {
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    flex: 6;
+}
+
+.post-title {
+    background: darkcyan;
+    flex: 1;
+}
+
+.section-post-container {
+    display: flex;
+    flex: 7;
+}
+
+.post-meta {
+    background: turquoise;
+    flex: 1;
+}
+
+.main-content-container {
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+}
+
+.main-content {
+    background: gray;
+    flex:1;
+}
+
+.main-content-img {
+    background: yellow;
+    color: black;
+    flex:2;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.side-bar {
+    background: orange;
+    flex: 1;
+}
+
+.ads {
+    background: green;
+    flex: 1;
+}
+
+.other-stuff {
+    background: purple;
+    flex: 1;
+}
+
+footer {
+    background: darkred;
+    height: 10%;
+}
