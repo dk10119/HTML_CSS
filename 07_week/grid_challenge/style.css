@@ -5,13 +5,89 @@
 }
 
 body {
-    background: rgb(164, 216, 236);
+    background: white;
     width: 100%;
     height: 100vh;
     display: grid;
     grid-template-rows: 1fr 6fr 1fr;
+    gap: 3px;
 }
 
 .pm {
     padding: 1rem;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3px;
+}
+
+.site-title {
+    background-color: #efef76
+}
+
+ul {
+    display: grid;
+    gap: 3px;
+    grid-template-columns: repeat(3, 1fr);
+    height: 100%;
+}
+
+li {
+    background-color: pink;
+    list-style-type: none;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    height: 100%;
+    gap: 3px;
+}
+
+.post-title {
+    background-color: #6d92ff;
+    grid-column: 1 / span 8;
+}
+
+.post-meta {
+    background-color: #71de71;
+    grid-row: 2 / span 5;
+    grid-column: 1 / span 2;
+}
+
+.main-content {
+    background-color: #b7b7b7;
+    grid-column: 3 / span 6;
+    grid-row: 2 / span 2;
+}
+
+.main-content-img {
+    background-color: #ffcc4b;
+    grid-column: 3 / span 6;
+    grid-row: 4 / span 3;
+}
+
+.side-bar {
+    background-color: #8aff9c;
+    grid-column: 9 / span 2;
+    grid-row: 1 / span 2;
+}
+
+.ads {
+    background-color: #ffc04c;
+    grid-column: 9 / span 2;
+    grid-row: 3 / span 2;
+}
+
+.other-stuff {
+    background-color: #9a6b9a;
+    grid-column: 9 / span 2;
+    grid-row: 5 / span 2;
+}
+
+footer {
+    background-color: #b88250;
 }
