@@ -1,0 +1,83 @@
+:root {
+    --neutral-color: cornsilk;
+    --font: Impact, sans-serif;
+    --primary-color: steelblue;
+    --secondary-color: teal;
+    --dark-color: #333;
+    --light-color: #fff;
+    --basic-shadow: 2px 2px 5px var(--dark-color);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font);
+    background-color: var(--neutral-color);
+    color: var(--light-color);
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.item {
+    background-color: var(--primary-color);
+    min-height: 200px;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    text-shadow: 0px 0px 5px var(--neutral-color), var(--basic-shadow);
+    /* transition: all 1.5s ease-in-out; */
+}
+
+.item:hover {
+    box-shadow: 0 0 15px var(--dark-color) inset, 0px 0px 10px var(--secondary-color);
+    background-color: var(--secondary-color);
+    /* transition-timing-function: ease-out; */
+    transition: all 0.1s ease-in;
+}
+
+.round {
+    margin: 50px auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    box-shadow: 0 0 5px var(--dark-color);
+    transition: width 1s 0.1s ease-in, height 1s 0.1s ease-in, font-size 1s 0.1s ease-in;
+}
+
+.round:hover {
+    height: 400px;
+    width: 400px;
+    font-size: 4rem;
+    /* transition: all 3s 3s ease-in-out; */
+}
+
+.square {
+    margin: 50px auto;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    box-shadow: 0 0 5px var(--dark-color);
+    transition: transform 50s ease-in;
+}
+
+.square:hover {
+    transform: rotate(180000deg);
+}
